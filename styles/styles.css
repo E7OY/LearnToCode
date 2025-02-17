@@ -56,13 +56,18 @@ header {
     height: 80vh;
     width: 100%;
 }
-.hero-content, .courses {
+.hero-content, .courses, footer {
     background-color: var(--color-fondo);
 }
 .payments{
     background-color: var(--color-dark);
 }
-
+.bg-azul {
+    background-color: var(--color-primary);
+}
+.pago {
+    padding: 50px 70px;
+}
 
 /*ESTILOS BOTONES*/
 .btn-primary {
