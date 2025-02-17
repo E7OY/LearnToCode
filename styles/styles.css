@@ -36,7 +36,8 @@ header {
     padding: 0.25rem 0.5rem;
     border-radius: 0.25rem;
 }
- 
+
+
 .footer-logo {
     width: 150px;
 }
@@ -61,7 +62,17 @@ header {
     background-color: var(--color-primary);
     color: white;
     padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 2px solid var(--color-primary);
+    padding: 0.7em 2.5rem;
+}
+.btn-primary:hover {
+    background-color: var(--color-fondo);
+    color: var(--color-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
     cursor: pointer;
     transition: background-color 0.3s;
     border: 2px solid var(--color-primary);
@@ -86,4 +97,33 @@ header {
     border: 2px solid var(--color-dark);
     background-color: var(--color-dark);
     padding: 0.7em 2.5rem;
+}
+.btn-secondary-bg:hover{
+    color: var(--color-dark);
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 2px solid var(--color-dark);
+    background-color: rgba(255, 255, 255, 0.242);
+    padding: 0.7em 2.5rem;
+}
+.btn-secondary:hover {
+    color: var(--color-fondo);
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 2px solid var(--color-dark);
+    background-color: var(--color-dark);
+    padding: 0.7em 2.5rem;
+}
+
+
+
+
+.category-card:hover {
+    border: 2px solid var(--color-primary);
+    box-shadow: 10px -10px 0px var(--color-primary);
+    transition: 1s;
 }
