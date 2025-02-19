@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn to Code</title>
     <link rel="stylesheet" href="../styles/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
     <header class="main-header d-flex justify-content-around align-items-center py-4 px-5">
         <img src="../img/LEARNTOCODE-2.png" alt="Learn to Code Logo" width="200" class="logo">
         <nav class="main-nav">
             <ul class="d-flex gap-4 list-unstyled">
-                <li><a href="#home" class="text-dark text-decoration-none">Home</a></li>
-                <li><a href="#courses" class="text-dark text-decoration-none">Cursos</a></li>
-                <li><a href="#about" class="text-dark text-decoration-none">About</a></li>
+                <li><a href="index.html" class="text-dark text-decoration-none">Home</a></li>
+                <li><a href="cursos.html" class="text-dark text-decoration-none">Cursos</a></li>
+                <li><a href="contacto.html" class="text-dark text-decoration-none">Contacto</a></li>
             </ul>
         </nav>
         <button class="btn-primary">Iniciar Sesión</button>
@@ -26,8 +29,8 @@
                 <h1 class="fw-bold display-4">Aprende a <span class="highlight text-primary">programar</span> hoy</h1>
                 <h5>Aprende a programar hoy. Más de 100 cursos con certificación oficial.</h5>
                 <div class="hero-buttons">
-                    <button class="btn-secondary-bg">Únete ahora</button>
-                    <button class="btn-secondary">Aprender más</button>
+                    <a href="login.html" class="text-decoration-none btn-secondary-bg">Únete ahora</a>
+                    <a href="cursos.html" class="text-decoration-none btn-secondary">Únete ahora</a>
                 </div>
             </div>
             <img src="../img/coding-hand.png" width="350" alt="Coding illustration" class="hero-image">
@@ -38,25 +41,29 @@
                 <h2 class="py-5 fw-bold">Categorías</h2>
                 <div class="categories-grid row g-4">
                     <div class="category-card col-md-3 text-center">
-                        <div class="category-icon bg-primary-subtle rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 90px; height: 90px;">
+                        <div class="category-icon bg-primary-subtle rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
+                            style="width: 90px; height: 90px;">
                             <img src="../img/diseño.png" width="30" alt="Diseño Web">
                         </div>
                         <h5 class="fw-semibold">Diseño Web</h5>
                     </div>
                     <div class="category-card col-md-3 text-center">
-                        <div class="category-icon bg-primary-subtle rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 90px; height: 90px;">
+                        <div class="category-icon bg-primary-subtle rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
+                            style="width: 90px; height: 90px;">
                             <img src="../img/desarrollo.png" width="30" alt="Desarrollo Web">
                         </div>
                         <h5 class="fw-semibold">Desarrollo Web</h5>
                     </div>
                     <div class="category-card col-md-3 text-center">
-                        <div class="category-icon bg-primary-subtle rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 90px; height: 90px;">
+                        <div class="category-icon bg-primary-subtle rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
+                            style="width: 90px; height: 90px;">
                             <img src="../img/ia.png" width="30" alt="Inteligencia Artificial">
                         </div>
                         <h5 class="fw-semibold">IA</h5>
                     </div>
                     <div class="category-card col-md-3 text-center">
-                        <div class="category-icon bg-primary-subtle rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 90px; height: 90px;">
+                        <div class="category-icon bg-primary-subtle rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
+                            style="width: 90px; height: 90px;">
                             <img src="../img/seguridad.png" width="30" alt="Ciber seguridad">
                         </div>
                         <h5 class="fw-semibold">Ciber-seguridad</h5>
@@ -65,63 +72,180 @@
             </div>
         </section>
 
+
         <section class="courses py-5" id="courses">
-            <div class="container">
-                <h2>Cursos Populares</h2>
-                <div class="courses-grid row g-4">
-                    <article class="course-card col-md-4">
-                        <div class="course-image position-relative" style="aspect-ratio: 16/9;">
-                            <img src="img/70365-3.png" alt="Curso" class="w-100 h-100 object-fit-cover">
-                            <span class="course-tag position-absolute top-0 start-0 bg-primary text-white p-1">Nuevo</span>
-                        </div>
-                        <div class="course-content p-4">
-                            <h3>Nombre del curso</h3>
-                            <p>Descripción del curso</p>
-                            <div class="course-buttons d-flex gap-2">
-                                <button class="btn btn-outline-light">Ver más</button>
-                                <button class="btn btn-primary">Comprar</button>
+            <div class="container d-flex flex-column gap-3">
+                <h2 class="py-5 fw-bold">Cursos populares</h2>
+                <div class="row d-flex justify-content-center  gap-0 align-items-start">
+
+                    <article class="col-md-3">
+                        <div class="card h-100 bg-cover p-2 py-4" style="background-image: url('../img/courses_figma.jpg'); opacity: ;">
+                            <div class="card-body text-white">
+                                <div class="title d-flex flex-row justify-content-between align-items-center">
+                                    <h3 class="card-title fw-semibold float-left">DISEÑO WEB CON FIGMA</h3>
+                                    <img src="../img/meta.png" width="40" class="float-right" alt="">
+                                </div>
+                                <p class="card-text">CURSO DE INTRODUCCIÓN AL DISEÑO WEB CON LA HERRAMIENTA DE DISEÑO
+                                    VECTORIAL FIGMA</p>
+                                <div class="d-flex justify-content-between">
+                                    <span
+                                        class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">DISEÑO</span>
+                                        <span
+                                        class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">FIGMA</span>
+                                        <span
+                                        class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">BÁSICO</span>
+                                </div>
                             </div>
                         </div>
                     </article>
+
+                    <article class="col-md-3">
+                        <div class="card h-100 bg-cover p-2 py-4" style="background-image: url('../img/courses_figma.jpg'); opacity: ;">
+                            <div class="card-body text-white">
+                                <div class="title d-flex flex-row justify-content-between align-items-center">
+                                    <h3 class="card-title fw-semibold float-left">INTELIGENCIA ARTIFICIAL</h3>
+                                    <img src="../img/meta.png" width="40" class="float-right" alt="">
+                                </div>
+                                <p class="card-text">CURSO DE IA GENERATIVA DE DEEPSEEK</p>
+                                <div class="d-flex justify-content-between">
+                                    <span
+                                        class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">AI</span>
+                                        <span
+                                        class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">DEEPSEEK</span>
+                                        <span
+                                        class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">MEDIO</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-md-3">
+                        <div class="card h-100 bg-cover p-2 py-4" style="background-image: url('../img/courses_figma.jpg'); opacity: ;">
+                            <div class="card-body text-white">
+                                <div class="title d-flex flex-row justify-content-between align-items-center">
+                                    <h3 class="card-title fw-semibold float-left">DISEÑO WEB CON FIGMA</h3>
+                                    <img src="../img/meta.png" width="40" class="float-right" alt="">
+                                </div>
+                                <p class="card-text">CURSO DE INTRODUCCIÓN AL DISEÑO WEB CON LA HERRAMIENTA DE DISEÑO
+                                    VECTORIAL FIGMA</p>
+                                    <div class="d-flex justify-content-between">
+                                        <span
+                                            class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">DISEÑO</span>
+                                            <span
+                                            class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">FIGMA</span>
+                                            <span
+                                            class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">BÁSICO</span>
+                                    </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="row g-4 d-flex justify-content-center gap-1 align-items-end" style="margin-top: -60px;">
+
+                    <article class="col-md-3">
+                        <div class="card h-100 bg-cover p-2 py-4" style="background-image: url('../img/courses_figma.jpg'); opacity: ;">
+                            <div class="card-body text-white">
+                                <div class="title d-flex flex-row justify-content-between align-items-center">
+                                    <h3 class="card-title fw-semibold float-left">DISEÑO WEB CON FIGMA</h3>
+                                    <img src="../img/meta.png" width="40" class="float-right" alt="">
+                                </div>
+                                <p class="card-text">CURSO DE INTRODUCCIÓN AL DISEÑO WEB CON LA HERRAMIENTA DE DISEÑO
+                                    VECTORIAL FIGMA</p>
+                                <div class="d-flex justify-content-between">
+                                    <span
+                                        class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">DISEÑO</span>
+                                        <span
+                                        class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">FIGMA</span>
+                                        <span
+                                        class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">BÁSICO</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-md-3">
+                        <div class="card h-100 bg-cover p-2 py-4" style="background-image: url('../img/courses_figma.jpg'); opacity: ;">
+                            <div class="card-body text-white">
+                                <div class="title d-flex flex-row justify-content-between align-items-center">
+                                    <h3 class="card-title fw-semibold float-left">DISEÑO WEB CON FIGMA Y PENPOT</h3>
+                                    <img src="../img/meta.png" width="40" class="float-right" alt="">
+                                </div>
+                                <p class="card-text">CURSO DE INTRODUCCIÓN AL DISEÑO WEB CON LA HERRAMIENTA DE DISEÑO
+                                    VECTORIAL FIGMA Y LA HERRAMIENTA DE DISEÑO PENPOT</p>
+                                <div class="d-flex justify-content-between">
+                                    <span
+                                        class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">DISEÑO</span>
+                                        <span
+                                        class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">FIGMA</span>
+                                        <span
+                                        class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">BÁSICO</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-md-3">
+                        <div class="card h-100 bg-cover p-2 py-4" style="background-image: url('../img/courses_figma.jpg'); opacity: ;">
+                            <div class="card-body text-white">
+                                <div class="title d-flex flex-row justify-content-between align-items-center">
+                                    <h3 class="card-title fw-semibold float-left">DISEÑO WEB CON FIGMA</h3>
+                                    <img src="../img/meta.png" width="40" class="float-right" alt="">
+                                </div>
+                                <p class="card-text">CURSO DE INTRODUCCIÓN AL DISEÑO WEB CON LA HERRAMIENTA DE DISEÑO
+                                    VECTORIAL FIGMA</p>
+                                    <div class="d-flex justify-content-between">
+                                        <span
+                                            class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">DISEÑO</span>
+                                            <span
+                                            class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">FIGMA</span>
+                                            <span
+                                            class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">BÁSICO</span>
+                                    </div>
+                            </div>
+                        </div>
+                    </article>
+
                 </div>
             </div>
         </section>
 
         <section class="payments text-white py-5">
-                <div class="d-flex justify-content-around align-items-center py-5">
-                    <div class="col-4 pago w-auto rounded-5 text-center d-flex flex-column gap-4">
-                        <h6 class="text-white d-inline border-white border border-1 px-4 py-1 rounded-4">Estudiantes</h6>
-                        <ul class="list-unstyled fw-bold d-flex gap-2 flex-column">
-                            <li>+50 cursos gratuitos</li>
-                            <li>+50 cursos gratuitos</li>
-                            <li>+50 cursos gratuitos</li>
-                            <li>+50 cursos gratuitos</li>
-                            <li>+50 cursos gratuitos</li>
-                        </ul>
-                        <h2 class="text-start">5€</h2>
-                    </div>
-                    <div class="col-4 pago w-auto bg-azul rounded-5 text-center d-flex justify-content-center flex-column gap-4">
-                        <h6 class="text-dark fw-bold d-inline border-white bg-white border border-1 px-4 py-1 rounded-4">Gratuito</h6>
-                        <ul class="list-unstyled fw-bold d-flex gap-2 flex-column">
-                            <li>+50 cursos gratuitos</li>
-                            <li>+50 cursos gratuitos</li>
-                            <li>+50 cursos gratuitos</li>
-                            <li>+50 cursos gratuitos</li>
-                            <li>+50 cursos gratuitos</li>
-                        </ul>
-                        <h2 class="text-start">5€</h2>
-                    </div>
-                    <div class="col-4 w-auto pago rounded-5 text-center d-flex justify-content-center flex-column gap-4">
-                        <h6 class="text-white d-inline border-white border border-1 px-4 py-1 rounded-4">Estudiantes</h6>
-                        <ul class="list-unstyled fw-bold d-flex gap-2 flex-column">
-                            <li>+50 cursos gratuitos</li>
-                            <li>+50 cursos gratuitos</li>
-                            <li>+50 cursos gratuitos</li>
-                            <li>+50 cursos gratuitos</li>
-                            <li>+50 cursos gratuitos</li>
-                        </ul>
-                        <h2 class="text-start">5€</h2>
-                    </div>
+            <div class="d-flex justify-content-around align-items-center py-5">
+                <div class="col-4 pago w-auto rounded-5 text-center d-flex flex-column gap-4">
+                    <h6 class="text-white d-inline border-white border border-1 px-4 py-1 rounded-4">Estudiantes</h6>
+                    <ul class="list-unstyled fw-bold d-flex gap-2 flex-column">
+                        <li>+50 cursos gratuitos</li>
+                        <li>+50 cursos gratuitos</li>
+                        <li>+50 cursos gratuitos</li>
+                        <li>+50 cursos gratuitos</li>
+                        <li>+50 cursos gratuitos</li>
+                    </ul>
+                    <h2 class="text-start">5€</h2>
+                </div>
+                <div
+                    class="col-4 pago w-auto bg-azul rounded-5 text-center d-flex justify-content-center flex-column gap-4">
+                    <h6 class="text-dark fw-bold d-inline border-white bg-white border border-1 px-4 py-1 rounded-4">
+                        Gratuito</h6>
+                    <ul class="list-unstyled fw-bold d-flex gap-2 flex-column">
+                        <li>+50 cursos gratuitos</li>
+                        <li>+50 cursos gratuitos</li>
+                        <li>+50 cursos gratuitos</li>
+                        <li>+50 cursos gratuitos</li>
+                        <li>+50 cursos gratuitos</li>
+                    </ul>
+                    <h2 class="text-start">5€</h2>
+                </div>
+                <div class="col-4 w-auto pago rounded-5 text-center d-flex justify-content-center flex-column gap-4">
+                    <h6 class="text-white d-inline border-white border border-1 px-4 py-1 rounded-4">Estudiantes</h6>
+                    <ul class="list-unstyled fw-bold d-flex gap-2 flex-column">
+                        <li>+50 cursos gratuitos</li>
+                        <li>+50 cursos gratuitos</li>
+                        <li>+50 cursos gratuitos</li>
+                        <li>+50 cursos gratuitos</li>
+                        <li>+50 cursos gratuitos</li>
+                    </ul>
+                    <h2 class="text-start">5€</h2>
+                </div>
             </div>
         </section>
 
@@ -136,7 +260,7 @@
                 <h4>Anonimo</h4>
                 <h4>Estudiante en </h4>
             </div>
-            
+
 
 
         </section>
@@ -145,8 +269,8 @@
     </main>
 
     <footer class="main-footer text-dark text-light py-5 text-center  ">
-        <div class="footer-content d-flex flex-row justify-content-around align-items-center p-5">    
-        <img src="../img/LEARNTOCODE-2.png" alt="Learn to Code Logo" class="footer-logo">
+        <div class="footer-content d-flex flex-row justify-content-around align-items-center p-5">
+            <img src="../img/LEARNTOCODE-2.png" alt="Learn to Code Logo" class="footer-logo">
             <nav class="main-nav">
                 <ul class="d-flex gap-4 list-unstyled">
                     <li><a href="#home" class="text-dark text-decoration-none">Home</a></li>
@@ -155,7 +279,13 @@
                 </ul>
             </nav>
         </div>
-            <p>© 2025 Todos los derechos reservados</p>
+        <p>© 2025 Todos los derechos reservados</p>
     </footer>
+
+
+
+
+
 </body>
+
 </html>
