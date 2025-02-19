@@ -25,7 +25,7 @@
 
     <main>
         <section class="hero d-flex flex-row justify-content-evenly align-items-center" id="home">
-            <div class="d-flex flex-column gap-3">
+            <div class="col-6 w-auto d-flex flex-column gap-3">
                 <h1 class="fw-bold display-4">Aprende a <span class="highlight text-primary">programar</span> hoy</h1>
                 <h5>Aprende a programar hoy. Más de 100 cursos con certificación oficial.</h5>
                 <div class="hero-buttons">
@@ -33,7 +33,16 @@
                     <a href="cursos.html" class="text-decoration-none btn-secondary">Únete ahora</a>
                 </div>
             </div>
-            <img src="../img/coding-hand.png" width="350" alt="Coding illustration" class="hero-image">
+            <div class="col-6 w-auto">
+                <dotlottie-player
+                src="https://lottie.host/d04d21c6-d8a9-4522-b9d6-53fcf3919adc/5nHRrNO9vN.lottie"
+                background="transparent"
+                speed="1"
+                style="width: 400px; height: 400px"
+                loop
+                autoplay
+              ></dotlottie-player>            
+            </div>
         </section>
 
         <section class="categories  bg-light">
@@ -284,8 +293,7 @@
 
 
 
-
-
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 </body>
 
 </html>
