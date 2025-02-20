@@ -12,7 +12,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font-primary);
-
 }
 
 body {
@@ -47,14 +46,20 @@ header {
 }
 
 
-.hero, .courses {
+.hero, .courses, .reviews {
     background-color: #F9FAFC;
     background-image: url('../img/background.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    height: 80vh;
+    height: auto;
     width: 100%;
+}
+.payments {
+    background: #F9FAFC;
+}
+.bg-oscuro{
+    background-color: var(--color-dark);
 }
 .courses {
     height: auto;
@@ -65,9 +70,6 @@ header {
 .hero-content, .courses, footer {
     background-color: var(--color-fondo);
 }
-.payments{
-    background-color: var(--color-dark);
-}
 .bg-azul {
     background-color: var(--color-primary);
 }
@@ -76,6 +78,26 @@ header {
 }
 
 /*ESTILOS BOTONES*/
+.btn-light {
+    background-color: var(--color-fondo);
+    color: var(--color-dark);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 2px solid var(--color-fondo);
+    padding: 0.7em 2.5rem;
+}
+.btn-light:hover {
+    background-color: var(--color-dark);
+    color: var(--color-fondo);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 2px solid var(--color-fondo);
+    padding: 0.7em 2.5rem;
+}
 .btn-primary {
     background-color: var(--color-primary);
     color: white;
@@ -138,10 +160,35 @@ header {
 }
 
 
+.typing-container {
+    font-family: monospace;
+    font-size: 3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.1em solid #155dfc;
+    width: 22.5ch;
+    animation: typing 2s steps(24), blink-caret 0.75s step-end infinite;
+  }
+  
+  .cursor {
+    display: inline-block;
+    animation: blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 22.5ch; }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #155dfc; }
+  }
 
+  .review:hover {
+    box-shadow: 10px 10px 25px #CAE2FA, -10px -10px 25px #FAE4F9;
 
-
-
+  }
 
 
 .courses .card {

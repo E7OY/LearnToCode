@@ -24,9 +24,11 @@
     </header>
 
     <main>
-        <section class="hero d-flex flex-row justify-content-evenly align-items-center" id="home">
+        <section class="hero d-flex flex-row justify-content-evenly align-items-center py-5" id="home">
             <div class="col-6 w-auto d-flex flex-column gap-3">
-                <h1 class="fw-bold display-4">Aprende a <span class="highlight text-primary">programar</span> hoy</h1>
+                <h1 class="fw-bold display-4">
+                    <div class="typing-container"><span id="typed-text"></span><span class="cursor"></span></div>
+                </h1>
                 <h5>Aprende a programar hoy. Más de 100 cursos con certificación oficial.</h5>
                 <div class="hero-buttons">
                     <a href="login.html" class="text-decoration-none btn-secondary-bg">Únete ahora</a>
@@ -34,14 +36,9 @@
                 </div>
             </div>
             <div class="col-6 w-auto">
-                <dotlottie-player
-                src="https://lottie.host/d04d21c6-d8a9-4522-b9d6-53fcf3919adc/5nHRrNO9vN.lottie"
-                background="transparent"
-                speed="1"
-                style="width: 400px; height: 400px"
-                loop
-                autoplay
-              ></dotlottie-player>            
+                <dotlottie-player src="https://lottie.host/d04d21c6-d8a9-4522-b9d6-53fcf3919adc/5nHRrNO9vN.lottie"
+                    background="transparent" speed="1" style="width: 400px; height: 400px" loop
+                    autoplay></dotlottie-player>
             </div>
         </section>
 
@@ -87,8 +84,9 @@
                 <h2 class="py-5 fw-bold">Cursos populares</h2>
                 <div class="row d-flex justify-content-center  gap-0 align-items-start">
 
-                    <article class="col-md-3">
-                        <div class="card h-100 bg-cover p-2 py-4" style="background-image: url('../img/courses_figma.jpg'); opacity: ;">
+                    <article class="col-md-4">
+                        <div class="card h-100 bg-cover p-2 py-4"
+                            style="background-image: url('../img/courses_figma.jpg');">
                             <div class="card-body text-white">
                                 <div class="title d-flex flex-row justify-content-between align-items-center">
                                     <h3 class="card-title fw-semibold float-left">DISEÑO WEB CON FIGMA</h3>
@@ -99,128 +97,141 @@
                                 <div class="d-flex justify-content-between">
                                     <span
                                         class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">DISEÑO</span>
-                                        <span
+                                    <span
                                         class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">FIGMA</span>
-                                        <span
+                                    <span
                                         class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">BÁSICO</span>
                                 </div>
                             </div>
                         </div>
                     </article>
 
-                    <article class="col-md-3">
-                        <div class="card h-100 bg-cover p-2 py-4" style="background-image: url('../img/courses_figma.jpg'); opacity: ;">
+                    <article class="col-md-4">
+                        <div class="card h-100 bg-cover p-2 py-4"
+                            style="background-image: url('../img/courses_ia.jpg');">
                             <div class="card-body text-white">
                                 <div class="title d-flex flex-row justify-content-between align-items-center">
                                     <h3 class="card-title fw-semibold float-left">INTELIGENCIA ARTIFICIAL</h3>
-                                    <img src="../img/meta.png" width="40" class="float-right" alt="">
+                                    <img src="../img/deepseek.png" width="40" class="float-right" alt="">
                                 </div>
                                 <p class="card-text">CURSO DE IA GENERATIVA DE DEEPSEEK</p>
                                 <div class="d-flex justify-content-between">
                                     <span
                                         class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">AI</span>
-                                        <span
+                                    <span
                                         class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">DEEPSEEK</span>
-                                        <span
+                                    <span
                                         class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">MEDIO</span>
                                 </div>
                             </div>
                         </div>
                     </article>
-                    <article class="col-md-3">
-                        <div class="card h-100 bg-cover p-2 py-4" style="background-image: url('../img/courses_figma.jpg'); opacity: ;">
+                    <article class="col-md-4">
+                        <div class="card h-100 bg-cover p-2 py-4"
+                            style="background-image: url('../img/courses_web.jpg');">
                             <div class="card-body text-white">
                                 <div class="title d-flex flex-row justify-content-between align-items-center">
-                                    <h3 class="card-title fw-semibold float-left">DISEÑO WEB CON FIGMA</h3>
-                                    <img src="../img/meta.png" width="40" class="float-right" alt="">
+                                    <h3 class="card-title fw-semibold float-left">CURSO WEB BÁSICO</h3>
+                                    <img src="../img/ibm.png" width="40" class="float-right" alt="">
                                 </div>
-                                <p class="card-text">CURSO DE INTRODUCCIÓN AL DISEÑO WEB CON LA HERRAMIENTA DE DISEÑO
-                                    VECTORIAL FIGMA</p>
-                                    <div class="d-flex justify-content-between">
-                                        <span
-                                            class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">DISEÑO</span>
-                                            <span
-                                            class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">FIGMA</span>
-                                            <span
-                                            class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">BÁSICO</span>
-                                    </div>
+                                <p class="card-text">
+                                    CURSO DE MAQUETACIÓN WEB BÁSICO
+                                </p>
+                                <div class="d-flex justify-content-between">
+                                    <span
+                                        class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">HTML</span>
+                                    <span
+                                        class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">CSS</span>
+                                    <span
+                                        class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">BÁSICO</span>
+                                </div>
                             </div>
                         </div>
                     </article>
 
                 </div>
 
-                <div class="row g-4 d-flex justify-content-center gap-1 align-items-end" style="margin-top: -60px;">
+                <div class="row g-4 d-flex flex-row justify-content-center gap-1 align-items-end" style="margin-top: -60px;">
 
-                    <article class="col-md-3">
-                        <div class="card h-100 bg-cover p-2 py-4" style="background-image: url('../img/courses_figma.jpg'); opacity: ;">
+                    <article class="col-md-4">
+                        <div class="card h-100 bg-cover p-2 py-4"
+                            style="background-image: url('../img/courses_react.jpg');">
                             <div class="card-body text-white">
                                 <div class="title d-flex flex-row justify-content-between align-items-center">
-                                    <h3 class="card-title fw-semibold float-left">DISEÑO WEB CON FIGMA</h3>
-                                    <img src="../img/meta.png" width="40" class="float-right" alt="">
+                                    <h3 class="card-title fw-semibold float-left">CURSO AVANZADO DE REACT</h3>
+                                    <img src="../img/google.png" width="40" class="float-right" alt="">
                                 </div>
-                                <p class="card-text">CURSO DE INTRODUCCIÓN AL DISEÑO WEB CON LA HERRAMIENTA DE DISEÑO
-                                    VECTORIAL FIGMA</p>
+                                <p class="card-text">CURSO DE REACT, USO DE HOOKS, CREACIÓN DE COMPONENTES Y
+                                    CONSUMO DE APIS</p>
+                                </p>
                                 <div class="d-flex justify-content-between">
                                     <span
                                         class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">DISEÑO</span>
-                                        <span
+                                    <span
                                         class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">FIGMA</span>
-                                        <span
+                                    <span
                                         class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">BÁSICO</span>
                                 </div>
                             </div>
                         </div>
                     </article>
 
-                    <article class="col-md-3">
-                        <div class="card h-100 bg-cover p-2 py-4" style="background-image: url('../img/courses_figma.jpg'); opacity: ;">
+                    <article class="col-md-4">
+                        <div class="card h-100 bg-cover p-2 py-4"
+                            style="background-image: url('../img/courses_php.jpg');">
                             <div class="card-body text-white">
                                 <div class="title d-flex flex-row justify-content-between align-items-center">
-                                    <h3 class="card-title fw-semibold float-left">DISEÑO WEB CON FIGMA Y PENPOT</h3>
+                                    <h3 class="card-title fw-semibold float-left">CRUD CON PHP Y MYSQL</h3>
                                     <img src="../img/meta.png" width="40" class="float-right" alt="">
                                 </div>
-                                <p class="card-text">CURSO DE INTRODUCCIÓN AL DISEÑO WEB CON LA HERRAMIENTA DE DISEÑO
-                                    VECTORIAL FIGMA Y LA HERRAMIENTA DE DISEÑO PENPOT</p>
+                                <p class="card-text">C 
+                                    OBTENDRÁS LOS CONOCIMIENTOS NECESARIOS PARA CREAR APLICACIONES MÁS COMPLEJAS. </p>
                                 <div class="d-flex justify-content-between">
                                     <span
                                         class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">DISEÑO</span>
-                                        <span
+                                    <span
                                         class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">FIGMA</span>
-                                        <span
+                                    <span
                                         class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">BÁSICO</span>
                                 </div>
                             </div>
                         </div>
                     </article>
-                    <article class="col-md-3">
-                        <div class="card h-100 bg-cover p-2 py-4" style="background-image: url('../img/courses_figma.jpg'); opacity: ;">
+                    <article class="col-md-4">
+                        <div class="card h-100 bg-cover p-2 py-4"
+                            style="background-image: url('../img/courses_backend.png');">
                             <div class="card-body text-white">
                                 <div class="title d-flex flex-row justify-content-between align-items-center">
-                                    <h3 class="card-title fw-semibold float-left">DISEÑO WEB CON FIGMA</h3>
-                                    <img src="../img/meta.png" width="40" class="float-right" alt="">
+                                    <h3 class="card-title fw-semibold float-left">CURSO BACKEND AVANZADO</h3>
+                                    <img src="../img/deepseek.png" width="40" class="float-right" alt="">
                                 </div>
-                                <p class="card-text">CURSO DE INTRODUCCIÓN AL DISEÑO WEB CON LA HERRAMIENTA DE DISEÑO
-                                    VECTORIAL FIGMA</p>
-                                    <div class="d-flex justify-content-between">
-                                        <span
-                                            class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">DISEÑO</span>
-                                            <span
-                                            class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">FIGMA</span>
-                                            <span
-                                            class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">BÁSICO</span>
-                                    </div>
+                                <p class="card-text">CURS 
+                                </p>
+                                <div class="d-flex justify-content-between">
+                                    <span
+                                        class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">DISEÑO</span>
+                                    <span
+                                        class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">FIGMA</span>
+                                    <span
+                                        class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">BÁSICO</span>
+                                </div>
                             </div>
                         </div>
                     </article>
 
+                </div>
+                
+                <div class="cta bg-oscuro p-5 text-center rounded-4 d-flex flex-column gap-3">
+                    <h2 class="text-white fw-bold">Ver todos los cursos</h2>
+                    <p class="text-white-50">Únete a nuestra comunidad de estudiantes y aprende a programar hoy.</p>
+                    <button class="btn-light text-decoration-none w-auto mx-auto">Únete ahora</button>
                 </div>
             </div>
         </section>
 
         <section class="payments text-white py-5">
-            <div class="d-flex justify-content-around align-items-center py-5">
-                <div class="col-4 pago w-auto rounded-5 text-center d-flex flex-column gap-4">
+            <div class="d-flex justify-content-center gap-5 align-items-center py-5">
+                <div class="col-4 pago w-auto rounded-5 border border-1 border-white text-center d-flex flex-column gap-4">
                     <h6 class="text-white d-inline border-white border border-1 px-4 py-1 rounded-4">Estudiantes</h6>
                     <ul class="list-unstyled fw-bold d-flex gap-2 flex-column">
                         <li>+50 cursos gratuitos</li>
@@ -244,7 +255,7 @@
                     </ul>
                     <h2 class="text-start">5€</h2>
                 </div>
-                <div class="col-4 w-auto pago rounded-5 text-center d-flex justify-content-center flex-column gap-4">
+                <div class="col-4 pago w-auto rounded-5 border border-1 border-white text-center d-flex flex-column gap-4">
                     <h6 class="text-white d-inline border-white border border-1 px-4 py-1 rounded-4">Estudiantes</h6>
                     <ul class="list-unstyled fw-bold d-flex gap-2 flex-column">
                         <li>+50 cursos gratuitos</li>
@@ -258,26 +269,75 @@
             </div>
         </section>
 
-        <section class="reviews">
-            <div class="review">
-                <p>
-                    Los mejores cursos de programación,
-                    he aprendido un montón en esta gran
-                    plataforma de formación.
-                </p>
-                <hr>
-                <h4>Anonimo</h4>
-                <h4>Estudiante en </h4>
+        <section class="reviews w-100 py-5">
+            <div class="container">
+            <h2 class="py-5 fw-bold">Opiniones</h2>
+
+                <div class="row d-flex justify-content-center">
+
+                    <div class="col-md-4 d-flex flex-column align-items-stretch gap-4">
+
+                        <div class="review border border-1 border-black-50 bg-white rounded-5 p-4">
+                            <p>Los mejores cursos de programación que he encontrado en la web, me han ayudado a mejorar
+                                mis habilidades.</p>
+                            <hr>
+                            <div class="d-flex flex-row justify-content-between">
+                                <div class="d-flex flex-column">
+                                    <h6>Juan Pérez</h6>
+                                    <span class="text-black-50">Desarrollador Web</span>
+                                </div>
+                                <img src="../img/usuario.png" alt="User 4" width="40" height="40" style="opacity: 0.1;">
+                            </div>
+                        </div>
+
+                        <div class="review border border-1 border-black-50 bg-white rounded-5 p-4">
+                            <p>Los mejores cursos de programación que he encontrado en la web, me han ayudado a mejorar
+                                mis habilidades.</p>
+                            <hr>
+                            <div class="d-flex flex-row justify-content-between">
+                                <div class="d-flex flex-column">
+                                    <h6>Juan Pérez</h6>
+                                    <span class="text-black-50">Desarrollador Web</span>
+                                </div>
+                                <img src="../img/usuario.png" alt="User 4" width="40" height="40" style="opacity: 0.1;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 d-flex flex-column gap-4 align-items-end mt-5">
+                        <div class="review border border-1 border-black-50 bg-white rounded-5 p-4">
+                            <p>Los mejores cursos de programación que he encontrado en la web, me han ayudado a mejorar
+                                mis habilidades.</p>
+                            <hr>
+                            <div class="d-flex flex-row justify-content-between">
+                                <div class="d-flex flex-column">
+                                    <h6>Juan Pérez</h6>
+                                    <span class="text-black-50">Desarrollador Web</span>
+                                </div>
+                                <img src="../img/usuario.png" alt="User 4" width="40" height="40" style="opacity: 0.1;">
+                            </div>
+                        </div>
+                        <div class="review border border-1 border-black-50 bg-white rounded-5 p-4">
+                            <p>Los mejores cursos de programación que he encontrado en la web, me han ayudado a mejorar
+                                mis habilidades.</p>
+                            <hr>
+                            <div class="d-flex flex-row justify-content-between">
+                                <div class="d-flex flex-column">
+                                    <h6>Juan Pérez</h6>
+                                    <span class="text-black-50">Desarrollador Web</span>
+                                </div>
+                                <img src="../img/usuario.png" alt="User 4" width="40" height="40" style="opacity: 0.1;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
-
         </section>
 
 
     </main>
 
-    <footer class="main-footer text-dark text-light py-5 text-center  ">
+    <footer class="text-dark text-light py-5 text-center border border-top border-1">
         <div class="footer-content d-flex flex-row justify-content-around align-items-center p-5">
             <img src="../img/LEARNTOCODE-2.png" alt="Learn to Code Logo" class="footer-logo">
             <nav class="main-nav">
@@ -291,7 +351,22 @@
         <p>© 2025 Todos los derechos reservados</p>
     </footer>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const text = "Aprende a programar hoy";
+            let index = 0;
+            const speed = 50;
 
+            function typeWriter() {
+                if (index < text.length) {
+                    document.getElementById("typed-text").innerHTML += text.charAt(index);
+                    index++;
+                    setTimeout(typeWriter, speed);
+                }
+            }
+            typeWriter();
+        });
+    </script>
 
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 </body>
