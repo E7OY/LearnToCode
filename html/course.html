@@ -15,37 +15,50 @@
     <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js"></script>
 </head>
 
-<body style="position: relative;">
-    <header
-        class="main-header d-flex justify-content-around border border-bottom border-1 align-items-center py-4 px-5">
-        <a href="index.html">
-            <img src="../img/LEARNTOCODE-2.png" alt="Learn to Code Logo" width="200" class="logo">
-        </a>
-        <nav class="main-nav">
-            <ul class="d-flex gap-4 list-unstyled">
-                <li><a href="index.html" class="text-dark text-decoration-none">Home</a></li>
-                <li><a href="course.html" class="text-dark text-decoration-none">Cursos</a></li>
-                <li><a href="contact.html" class="text-dark text-decoration-none">Contacto</a></li>
-            </ul>
+<body>
+    <header class="main-header sticky-top">
+        <nav class="navbar navbar-expand-lg py-3">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="../img/LEARNTOCODE-2.png" alt="Learn to Code Logo" width="200" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between " id="navbarNav">
+                    <ul class="navbar-nav mx-auto  py-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="course.html">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <button class="btn-primary">Iniciar Sesión</button>
+                </div>
+            </div>
         </nav>
-        <button class="btn-primary">Iniciar Sesión</button>
     </header>
 
 
-    <section class="course py-5">
+    <section class="course py-2">
         <div class="container">
 
             <div class="row d-flex flex-row justify-content-between align-items-center my-5">
-                <div class="col-6 product-detail">
-                    <img src="../img/google-color.png" class="my-3" width="80" alt="">
-                    <h1 class="fw-bold">Curso de React</h1>
+                <div class="col-md-6 product-detail">
+                    <img src="../img/google-color.png" class="my-3" width="90" alt="">
+                    <h1 class="fw-bold">Curso de React desde 0</h1>
                     <p> Curso de React, uso de hooks, creación de componentes y consumo de APIs,
                         y crearemos proyectos reales que podrás agregar a tu portafolio.
                     </p>
-                    <button class="btn-primary w-auto " href="">Inscríbete ya</button>
+                    <button class="btn-primary w-auto rounded-1 " href="">Inscríbete ya</button>
                     <h6 class="my-3"><span class="fw-bold">80.8000</span> ya inscritos</h6>
                 </div>
-                <div class="col-6 product-video">
+                <div class="col-md-6 product-video">
                     <lite-youtube videoid="7iobxzd_2wY" class="rounded-2" params="controls=1"></lite-youtube>
                 </div>
             </div>
@@ -54,8 +67,8 @@
 
 
             <div class="row d-flex flex-row justify-content-between align-items-start my-5">
-            
-                <div class="col-8">
+
+                <div class="col-md-8">
                     <div class="container detalles  w-100">
                         <h2>Contenido</h2>
                         <div class="module ">
@@ -82,7 +95,7 @@
                                 </li>
                             </ul>
                         </div>
-                        
+
                         <div class="module mt-4">
                             <div class="module-header mb-3">
                                 <h3>Hooks Avanzados</h3>
@@ -110,13 +123,14 @@
                     </div>
                 </div>
 
-                <div class="col-4">
+                <div class="col-md-4">
                     <h2>Instructor</h2>
-                    <div class="d-flex flex-column justify-content-start rounded-2 border border-2 border-black-50 p-5 ">
+                    <div
+                        class="d-flex  shadow-sm flex-column justify-content-start rounded-2 border border-2 border-black-50 p-5 ">
                         <div class="instructor">
                             <h6>Calificaciones del Instructor
                             </h6>
-                                4,8/5 <i class="fas fa-star"></i> (450 calificaciones)
+                            4,8/5 <i class="fas fa-star"></i> (450 calificaciones)
                         </div>
                         <div class="container d-flex flex-row align-items-center my-3">
                             <img src="../img/usuario.png" alt="User 4" width="50" height="50" style="opacity: 0.1;">
@@ -130,7 +144,7 @@
                         <div class="container d-flex flex-column mt-3">
                             <h5>Ofrecido por</h5>
                             <div class="container d-flex flex-row align-items-center mt-3">
-                                <img src="../img/google-color.png" alt="User 4" width="70" >
+                                <img src="../img/google-color.png" alt="User 4" width="70">
                                 <div class="info d-flex flex-column gap-0 p-0 m-0 mx-3">
                                     <h6 class="p-0 m-0">Google</h6>
                                     <h6 class="p-0 m-0 text-black-50">Mas cursos</h6>
@@ -143,115 +157,104 @@
             </div>
 
 
-                <div class="row d-flex flex-row justify-content-between align-items-center my-5">
-                            <div class="d-flex flex-row justify-content-evenly border-2 border border-black-50 p-3 align-items-center rounded-1">
-                                <div class="col-8 w-auto">
-                                <h4>Obtén un certificado profesional</h4>
-                                <p class="w-75">Agrega esta credencial a tu perfil de LinkedIn o a tu currículum vitae
-                                    Compártelo en las redes sociales y en la evaluación de tu rendimiento</p>
-                                </div>
-                                <div class="col-4 w-auto">
-                                    <img src="../img/certificado.png" width="250"  alt="">
-                                </div>
+            <div class="row my-5">
+                <div class="col-12">
+                    <div class="certificate-section bg-light rounded-3 shadow-sm border border-2 border-black-50 p-4">
+                        <div class="row align-items-center">
+                            <div class="col-lg-8 col-md-7 mb-3 mb-md-0">
+                                <h4 class="fw-bold mb-3">Obtén un certificado profesional</h4>
+                                <p class="text-muted mb-0">
+                                    Agrega esta credencial a tu perfil de LinkedIn o a tu currículum vitae.
+                                    Compártelo en las redes sociales y en la evaluación de tu rendimiento.
+                                </p>
                             </div>
-
-                </div>
-            
-                <!--
-        <div class="col-12 my-5">
-            <div class="notes">
-                </p>
-                <h2>Transcripcion</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fuga maxime autem praesentium doloribus sequi ipsa velit
-                    aliquid assumenda dolores possimus nihil, accusantium
-                    voluptatum officiis, dolorem nulla omnis? Voluptatum,
-                    excepturi aperiam.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fuga maxime autem praesentium doloribus sequi ipsa velit
-                    aliquid assumenda dolores possimus nihil, accusantium
-                    voluptatum officiis, dolorem nulla omnis? Voluptatum,
-                    excepturi aperiam.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fuga maxime autem praesentium doloribus sequi ipsa velit
-                    aliquid assumenda dolores possimus nihil, accusantium
-                    voluptatum officiis, dolorem nulla omnis? Voluptatum,
-                    excepturi aperiam.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fuga maxime autem praesentium doloribus sequi ipsa velit
-                    aliquid assumenda dolores possimus nihil, accusantium
-                    voluptatum officiis, dolorem nulla omnis? Voluptatum,
-                    excepturi aperiam.
-                </p>
-            </div>
-        </div>
-        -->
-
-        <div class="row">
-            <div class="col-12">
-                <h2>Por qué las personas eligen LearnToCode para desarrollar su carrera profesional</h2>
-                <div class="container d-flex flex-row justify-content-center gap-3 mt-3">
-                    <div class="col-3 border border-2 border-black-50 rounded-2 p-3">
-                        <div class="user-info d-flex flex-row align-items-center gap-3">
-                            <div class="user-img">
-                                <img src="../img/usuario.png" alt="User 4" width="50" style="opacity: 0.1;">
-                            </div>
-                            <div class="user-name d-flex flex-column">
-                                <h6>Eloy G.</h6>
-                                <h6 class="text-black-50">Estudiante desde 2019</h6>
+                            <div class="col-lg-4 col-md-5 text-center">
+                                <img src="../img/certificado.png" class="img-fluid" style="max-width: 300px;"
+                                    alt="Certificado profesional">
                             </div>
                         </div>
-                        <p class="my-3">
-                            "Aprendí a programar en LearnToCode y ahora tengo un trabajo en Google"
-                        </p>
-                    </div>
-                    <div class="col-3 border border-2 border-black-50 rounded-2 p-3">
-                        <div class="user-info d-flex flex-row align-items-center gap-3">
-                            <div class="user-img">
-                                <img src="../img/usuario.png" alt="User 4" width="50" style="opacity: 0.1;">
-                            </div>
-                            <div class="user-name d-flex flex-column">
-                                <h6>Eloy G.</h6>
-                                <h6 class="text-black-50">Estudiante desde 2019</h6>
-                            </div>
-                        </div>
-                        <p class="my-3">
-                            "Aprendí a programar en LearnToCode y ahora tengo un trabajo en Google"
-                        </p>
-                    </div>
-                    <div class="col-3 border border-2 border-black-50 rounded-2 p-3">
-                        <div class="user-info d-flex flex-row align-items-center gap-3">
-                            <div class="user-img">
-                                <img src="../img/usuario.png" alt="User 4" width="50" style="opacity: 0.1;">
-                            </div>
-                            <div class="user-name d-flex flex-column">
-                                <h6>Eloy G.</h6>
-                                <h6 class="text-black-50">Estudiante desde 2019</h6>
-                            </div>
-                        </div>
-                        <p class="my-3">
-                            "Aprendí a programar en LearnToCode y ahora tengo un trabajo en Google"
-                        </p>
-                    </div>
-                    <div class="col-3 border border-2 border-black-50 rounded-2 p-3">
-                        <div class="user-info d-flex flex-row align-items-center gap-3">
-                            <div class="user-img">
-                                <img src="../img/usuario.png" alt="User 4" width="50" style="opacity: 0.1;">
-                            </div>
-                            <div class="user-name d-flex flex-column">
-                                <h6>Eloy G.</h6>
-                                <h6 class="text-black-50">Estudiante desde 2019</h6>
-                            </div>
-                        </div>
-                        <p class="my-3">
-                            "Aprendí a programar en LearnToCode y ahora tengo un trabajo en Google"
-                        </p>
                     </div>
                 </div>
             </div>
-        </div>
 
+
+            <div class="row my-5">
+                <div class="col-12">
+                    <h2 class="mb-4">Por qué las personas eligen LearnToCode para desarrollar su carrera profesional
+                    </h2>
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-1">
+                            <div class="col">
+                                <div class="review-card h-100 border border-2 border-black-50 rounded-2 p-3 shadow-sm">
+                                    <div class="user-info d-flex align-items-center gap-3 mb-3">
+                                        <div class="user-img">
+                                            <img src="../img/usuario.png" alt="User 1" width="50" style="opacity: 0.1;">
+                                        </div>
+                                        <div class="user-name">
+                                            <h6 class="mb-0">Eloy G.</h6>
+                                            <small class="text-muted">Estudiante desde 2019</small>
+                                        </div>
+                                    </div>
+                                    <p class="review-text mb-0">
+                                        "Aprendí a programar en LearnToCode y ahora tengo un trabajo en Google"
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="review-card h-100 border border-2 border-black-50 rounded-2 p-3 shadow-sm">
+                                    <div class="user-info d-flex align-items-center gap-3 mb-3">
+                                        <div class="user-img">
+                                            <img src="../img/usuario.png" alt="User 2" width="50" style="opacity: 0.1;">
+                                        </div>
+                                        <div class="user-name">
+                                            <h6 class="mb-0">Ana M.</h6>
+                                            <small class="text-muted">Estudiante desde 2020</small>
+                                        </div>
+                                    </div>
+                                    <p class="review-text mb-0">
+                                        "Los cursos son muy completos y los instructores son excelentes"
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="review-card h-100 border border-2 border-black-50 rounded-2 p-3 shadow-sm">
+                                    <div class="user-info d-flex align-items-center gap-3 mb-3">
+                                        <div class="user-img">
+                                            <img src="../img/usuario.png" alt="User 3" width="50" style="opacity: 0.1;">
+                                        </div>
+                                        <div class="user-name">
+                                            <h6 class="mb-0">Carlos R.</h6>
+                                            <small class="text-muted">Estudiante desde 2021</small>
+                                        </div>
+                                    </div>
+                                    <p class="review-text mb-0">
+                                        "La plataforma es muy intuitiva y el contenido está muy bien estructurado"
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="review-card h-100 border border-2 border-black-50 rounded-2 p-3 shadow-sm">
+                                    <div class="user-info d-flex align-items-center gap-3 mb-3">
+                                        <div class="user-img">
+                                            <img src="../img/usuario.png" alt="User 4" width="50" style="opacity: 0.1;">
+                                        </div>
+                                        <div class="user-name">
+                                            <h6 class="mb-0">Laura S.</h6>
+                                            <small class="text-muted">Estudiante desde 2022</small>
+                                        </div>
+                                    </div>
+                                    <p class="review-text mb-0">
+                                        "He conseguido mejorar mis habilidades de programación significativamente"
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
     </section>
@@ -273,6 +276,10 @@
         <p>© 2025 Todos los derechos reservados</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
 </body>
 
 </html>

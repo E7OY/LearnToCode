@@ -13,18 +13,32 @@
 </head>
 
 <body>
-    <header class="main-header d-flex justify-content-around border border-bottom border-1 align-items-center py-4 px-5">
-        <a href="index.html">
-            <img src="../img/LEARNTOCODE-2.png" alt="Learn to Code Logo" width="200" class="logo">
-        </a>
-        <nav class="main-nav">
-            <ul class="d-flex gap-4 list-unstyled">
-                <li><a href="index.html" class="text-dark text-decoration-none">Home</a></li>
-                <li><a href="course.html" class="text-dark text-decoration-none">Cursos</a></li>
-                <li><a href="contact.html" class="text-dark text-decoration-none">Contacto</a></li>
-            </ul>
+    <header class="main-header sticky-top">
+        <nav class="navbar navbar-expand-lg py-3">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="../img/LEARNTOCODE-2.png" alt="Learn to Code Logo" width="200" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between " id="navbarNav">
+                    <ul class="navbar-nav mx-auto  py-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="course.html">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <button class="btn-primary">Iniciar Sesión</button>
+                </div>
+            </div>
         </nav>
-        <button class="btn-primary d-block">Iniciar Sesión</button>
     </header>
 
     <main>
@@ -121,7 +135,8 @@
                                         <a href="course.html" class="text-decoration-none text-white">INTELIGENCIA ARTIFICIAL</a></h3>
                                     <img src="../img/deepseek.png" width="40" class="float-right" alt="">
                                 </div>
-                                <p class="card-text">CURSO DE IA GENERATIVA DE DEEPSEEK</p>
+                                <p class="card-text">CURSO DE IA GENERATIVA DE DEEPSEEK
+                                    APRENDE A CREAR MODELOS DE IA GENERATIVA CON DEEPSEEK</p>
                                 <div class="d-flex justify-content-start gap-2">
                                     <span
                                         class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">AI</span>
@@ -143,7 +158,8 @@
                                     <img src="../img/ibm.png" width="40" class="float-right" alt="">
                                 </div>
                                 <p class="card-text">
-                                    CURSO DE MAQUETACIÓN WEB BÁSICO
+                                    CURSO DE MAQUETACIÓN WEB BÁSICO, APRENDE A CREAR TU PRIMERA PÁGINA WEB DESDE CERO
+
                                 </p>
                                 <div class="d-flex justify-content-start gap-2">
                                     <span
@@ -159,7 +175,7 @@
 
                 </div>
 
-                <div class="row g-4 d-flex flex-row justify-content-center align-items-end" style="margin-top: -20px;">
+                <div class="row g-4 d-flex flex-row justify-content-center align-items-end" style="margin-top: -60px;">
 
                     <article class="col-md-4">
                         <div class="card h-100 bg-cover p-2 py-4"
@@ -171,8 +187,7 @@
                                     <img src="../img/google.png" width="40" class="float-right" alt="">
                                 </div>
                                 <p class="card-text">CURSO DE REACT, USO DE HOOKS, CREACIÓN DE COMPONENTES Y
-                                    CONSUMO DE APIS</p>
-                                </p>
+                                    CONSUMO DE APIS, APRENDE A CREAR APLICACIONES WEB CON REACT, EL FRAMEWORK DE JAVASCRIPT MÁS POPULAR</p>
                                 <div class="d-flex justify-content-start gap-2">
                                     <span
                                         class="fw-lighter px-2 py-1 border border-1 border-white rounded-4 bg-opacity-100 text-white">DISEÑO</span>
@@ -193,7 +208,7 @@
                                     <h3 class="card-title fw-semibold float-left">
                                         <a href="course.html" class="text-decoration-none text-white">CRUD CON PHP Y MYSQL</a></h3>                                    <img src="../img/meta.png" width="40" class="float-right" alt="">
                                 </div>
-                                <p class="card-text">C 
+                                <p class="card-text">CURSO BÁSICO DE PHP Y MYSQL, APRENDE A CREAR UN CRUD CON PHP Y MYSQL,
                                     OBTENDRÁS LOS CONOCIMIENTOS NECESARIOS PARA CREAR APLICACIONES MÁS COMPLEJAS. </p>
                                     <div class="d-flex justify-content-start gap-2">
                                         <span
@@ -216,7 +231,9 @@
                                     </h3>
                                     <img src="../img/deepseek.png" width="40" class="float-right" alt="">
                                 </div>
-                                <p class="card-text">CURS 
+                                <p class="card-text">
+                                    CURSO DE DESARROLLO DE APLICACIONES WEB CON NODEJS, EXPRESS, MONGODB, JWT, ETC.
+                                    EN ESTE CURSO APRENDERÁS A CREAR UNA API RESTFUL CON NODEJS Y EXPRESS, A CONECTARTE A UNA BASE DE DATOS MONGODB, A AUTENTICAR USUARIOS, A CREAR TOKENS JWT
                                 </p>
                                 <div class="d-flex justify-content-start gap-2">
                                     <span
@@ -231,12 +248,7 @@
                     </article>
 
                 </div>
-                
-                <div class="cta bg-oscuro p-5 text-center rounded-4 d-flex flex-column gap-3">
-                    <h2 class="text-white fw-bold">Ver todos los cursos</h2>
-                    <p class="text-white-50">Únete a nuestra comunidad de estudiantes y aprende a programar hoy.</p>
-                    <button class="btn-light text-decoration-none w-auto mx-auto">Únete ahora</button>
-                </div>
+ 
             </div>
         </section>
 
@@ -379,6 +391,10 @@
         });
     </script>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+crossorigin="anonymous"></script>
+</body>
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 </body>
 
