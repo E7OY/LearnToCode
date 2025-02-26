@@ -64,6 +64,10 @@ header {
     background: #F9FAFC;
 }
 
+.pago {
+    padding: 50px;
+}
+
 .bg-oscuro {
     background-color: var(--color-dark);
 }
@@ -87,16 +91,12 @@ footer {
     background-color: var(--color-primary);
 }
 
-.pago {
-    padding: 50px 70px;
-}
-
 /*ESTILOS BOTONES*/
 .btn-light {
     background-color: var(--color-fondo);
     color: var(--color-dark);
     padding: 0.5rem 1rem;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
     cursor: pointer;
     transition: background-color 0.3s;
     border: 2px solid var(--color-fondo);
@@ -106,19 +106,16 @@ footer {
 .btn-light:hover {
     background-color: var(--color-dark);
     color: var(--color-fondo);
-    padding: 0.5rem 1rem;
-    border-radius: 2rem;
     cursor: pointer;
     transition: background-color 0.3s;
     border: 2px solid var(--color-fondo);
-    padding: 0.7em 2.5rem;
 }
 
 .btn-primary {
     background-color: var(--color-primary);
     color: white;
     padding: 0.5rem 1rem;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
     cursor: pointer;
     transition: background-color 0.3s;
     border: 2px solid var(--color-primary);
@@ -130,29 +127,27 @@ footer {
 .btn-primary:hover {
     background-color: var(--color-fondo);
     color: var(--color-primary);
-    padding: 0.5rem 1rem;
-    border-radius: 2rem;
     cursor: pointer;
     transition: background-color 0.3s;
     border: 2px solid var(--color-primary);
-    padding: 0.7em 2.5rem;
 }
 
 .btn-secondary {
     color: var(--color-dark);
     padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
     cursor: pointer;
     transition: background-color 0.3s;
     border: 2px solid var(--color-dark);
     background-color: rgba(255, 255, 255, 0.242);
     padding: 0.7em 2.5rem;
+
 }
 
 .btn-secondary-bg {
     color: var(--color-fondo);
     padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
     cursor: pointer;
     transition: background-color 0.3s;
     border: 2px solid var(--color-dark);
@@ -162,24 +157,16 @@ footer {
 
 .btn-secondary-bg:hover {
     color: var(--color-dark);
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
     border: 2px solid var(--color-dark);
     background-color: rgba(255, 255, 255, 0.242);
-    padding: 0.7em 2.5rem;
 }
 
 .btn-secondary:hover {
     color: var(--color-fondo);
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
     cursor: pointer;
     transition: background-color 0.3s;
     border: 2px solid var(--color-dark);
     background-color: var(--color-dark);
-    padding: 0.7em 2.5rem;
 }
 
 
