@@ -51,7 +51,7 @@ header {
 .courses,
 .reviews {
     background-color: #F9FAFC;
-    background-image: url('../img/background.jpg');
+    background-image: url('../img/background.webp');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -59,7 +59,6 @@ header {
     width: 100%;
 }
 
-.payments,
 .course {
     background: #F9FAFC;
 }
