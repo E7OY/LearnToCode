@@ -30,7 +30,7 @@
             </nav>
         </header>
         <main class="container-lg my-5">
-            <section class="d-flex justify-content-between mb-2" id="queryBar">
+            <section class="d-flex justify-content-between mb-3" id="queryBar">
                 <form class="d-flex gap-2">
                     <div class="input-group">
                         <input type="search" class="form-control" placeholder="Buscar">
@@ -75,7 +75,31 @@
                     </svg>
                 </a>
             </section>
-            <section class="d-flex flex-column" id="courseList">
+            <section class="grid" id="courseList">
+                <article class="g-col-12 row mb-3">
+                    <div class="col-4">
+                        <img src="../img/courses_react.jpg" alt="Curso de React" class="rounded w-100">
+                    </div>
+                    <div class="col-8 d-flex flex-column">
+                        <h4>React desde Cero</h4>
+                        <p>Aprende a crear Aplicaciones Web dinámicas. Con nuestras clases prácticas conocerás desde los fundamentos básicos hasta las técnicas más avanzadas.</p>
+                        <div class="mt-auto d-flex align-items-center">
+                            <p class="text-secondary mb-0 me-auto">55 horas · 722 clases</p><a class="btn btn-primary fs-5 fw-bold boton-precio">219,99€</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="g-col-12 row">
+                    <div class="col-4">
+                        <img src="../img/courses_python.png" alt="Curso de React" class="rounded w-100">
+                    </div>
+                    <div class="col-8 d-flex flex-column">
+                        <h4>Python para Data Science y Machine Learning</h4>
+                        <p>Analizar datos, crear modelos predictivos y dominar herramientas como Pandas, NumPy y Scikit-Learn... Curso práctico con proyectos reales.</p>
+                        <div class="mt-auto d-flex align-items-center">
+                            <p class="text-secondary mb-0 me-auto">25,5 horas · 217 clases</p><p class="text-secondary text-decoration-line-through fs-5 fw-bold mb-0 me-3">69,99</p><a class="btn btn-primary fs-5 fw-bold boton-precio">12,99€</a>
+                        </div>
+                    </div>
+                </article>
             </section>
         </main>
         <footer class="text-dark fw-light py-5 text-center border border-top border-1">
