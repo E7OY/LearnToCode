@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Estilos globales */
+
 :root {
     --color-primary: #155dfc;
     --color-dark: #0f172b;
     --color-text: #8d8d8d;
     --color-fondo: #F9FAFC;
 }
-
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
- }
+}
 
 body {
     background-color: var(--color-fondo);
@@ -172,7 +174,7 @@ footer {
     font-size: 3rem;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 0.1em solid #155dfc;
+    border-right: 0.1em solid var(--color-primary);
     width: 20ch;
     line-height: 80px;
     animation: typing 2s steps(24), blink-caret 0.75s step-end infinite;
@@ -196,7 +198,7 @@ footer {
         border-color: transparent;
     }
     50% {
-        border-color: #155dfc;
+        border-color: var(--color-primary);
     }
 }
 
@@ -225,49 +227,13 @@ footer {
 }
 
 
-.module {
-    padding: 20px;
-    border-radius: 10px;
-    border: 2px solid #dfdfdf;
-    margin-bottom: 20px;
-}
-.module-header {
-    border-bottom: 1px solid #dfdfdf;
-    padding-bottom: 10px;
-}
-.module-header h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-.module-header h5 {
-    font-size: 1rem;
-    color: #6c757d;
-    margin-bottom: 0;
-}
 
-
-
-
-
-.main-header {
-    border-bottom: 1px solid #dee2e6;
-    box-shadow: 0 2px 4px rgba(0,0,0,.08);
-}
-
-.nav-link {
-    color: var(--bs-dark);
-    font-weight: 500;
-    padding: 0.5rem 1rem;
-    transition: color 0.3s ease;
-}
-
+ 
 .nav-link:hover,
 .nav-link.active {
     color: var(--bs-primary);
 }
 
-
 .video {
     box-shadow: 0px 0px 0px 5px #e0e0e0;
-
 }
