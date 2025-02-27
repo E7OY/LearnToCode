@@ -248,6 +248,10 @@ footer {
         border-left:none;
         background-color:#ffffff;
     }
+    input,input::placeholder,select,.input-group-text,a{
+        border-color:#A7B6CE;
+        color:#8E97A5;
+    }
 } 
 
 .boton-precio{
