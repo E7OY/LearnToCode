@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
     --color-primary: #155dfc;
     --color-dark: #0f172b;
     --color-text: #8d8d8d;
     --color-fondo: #F9FAFC;
-    --font-primary: "Inter", sans-serif;
 }
 
 /* Reset básico */
@@ -11,17 +11,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--font-primary);
-}
+ }
 
 body {
     background-color: var(--color-fondo);
-    font-family: var(--font-primary);
+    font-family: "Montserrat", serif;    
     line-height: 1.5;
     width: 100%;
     margin: 0 auto;
-    font-family: "Inter", sans-serif;
-}
+ }
 
 header {
     background-color: var(--color-fondo);
@@ -99,7 +97,7 @@ footer {
     border-radius: 0.5rem;
     cursor: pointer;
     transition: background-color 0.3s;
-    border: 2px solid var(--color-fondo);
+    border: 1px solid var(--color-fondo);
     padding: 0.7em 2.5rem;
 }
 
@@ -108,7 +106,7 @@ footer {
     color: var(--color-fondo);
     cursor: pointer;
     transition: background-color 0.3s;
-    border: 2px solid var(--color-fondo);
+    border: 1px solid var(--color-fondo);
 }
 
 .btn-primary {
@@ -118,7 +116,7 @@ footer {
     border-radius: 0.5rem;
     cursor: pointer;
     transition: background-color 0.3s;
-    border: 2px solid var(--color-primary);
+    border: 1px solid var(--color-primary);
     padding: 0.7em 2.5rem;
     text-decoration: none;
     width: auto;
@@ -129,7 +127,7 @@ footer {
     color: var(--color-primary);
     cursor: pointer;
     transition: background-color 0.3s;
-    border: 2px solid var(--color-primary);
+    border: 1px solid var(--color-primary);
 }
 
 .btn-secondary {
@@ -138,7 +136,7 @@ footer {
     border-radius: 0.5rem;
     cursor: pointer;
     transition: background-color 0.3s;
-    border: 2px solid var(--color-dark);
+    border: 1px solid var(--color-dark);
     background-color: rgba(255, 255, 255, 0.242);
     padding: 0.7em 2.5rem;
 
@@ -150,14 +148,14 @@ footer {
     border-radius: 0.5rem;
     cursor: pointer;
     transition: background-color 0.3s;
-    border: 2px solid var(--color-dark);
+    border: 1px solid var(--color-dark);
     background-color: var(--color-dark);
     padding: 0.7em 2.5rem;
 }
 
 .btn-secondary-bg:hover {
     color: var(--color-dark);
-    border: 2px solid var(--color-dark);
+    border: 1px solid var(--color-dark);
     background-color: rgba(255, 255, 255, 0.242);
 }
 
@@ -165,7 +163,7 @@ footer {
     color: var(--color-fondo);
     cursor: pointer;
     transition: background-color 0.3s;
-    border: 2px solid var(--color-dark);
+    border: 1px solid var(--color-dark);
     background-color: var(--color-dark);
 }
 
@@ -176,7 +174,7 @@ footer {
     white-space: nowrap;
     overflow: hidden;
     border-right: 0.1em solid #155dfc;
-    width: 22.5ch;
+    width: 23.2ch;
     animation: typing 2s steps(24), blink-caret 0.75s step-end infinite;
 }
 
@@ -266,4 +264,10 @@ footer {
 .nav-link:hover,
 .nav-link.active {
     color: var(--bs-primary);
+}
+
+
+.video {
+    box-shadow: 0px 0px 0px 5px #e0e0e0;
+
 }
