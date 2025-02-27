@@ -169,7 +169,6 @@ footer {
 
 
 .typing-container {
-    font-family: monospace;
     font-size: 3rem;
     white-space: nowrap;
     overflow: hidden;
