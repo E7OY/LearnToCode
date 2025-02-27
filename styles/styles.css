@@ -77,8 +77,8 @@ header {
 }
 
 .hero h1,
-.hero h2 {
-    max-width: 50ch;
+.hero p {
+    max-width: 60ch;
 }
 
 .hero-content,
