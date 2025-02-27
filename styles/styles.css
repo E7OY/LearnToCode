@@ -173,7 +173,8 @@ footer {
     white-space: nowrap;
     overflow: hidden;
     border-right: 0.1em solid #155dfc;
-    width: 23.2ch;
+    width: 20ch;
+    line-height: 80px;
     animation: typing 2s steps(24), blink-caret 0.75s step-end infinite;
 }
 
@@ -186,7 +187,7 @@ footer {
         width: 0;
     }
     to {
-        width: 22.5ch;
+        width: 20ch;
     }
 }
 @keyframes blink-caret {
