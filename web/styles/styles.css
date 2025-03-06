@@ -46,7 +46,7 @@ header {
     width: 150px;
 }
 
-.grid,
+ 
  .hero,
 .courses,
 .reviews {
@@ -176,7 +176,7 @@ footer {
     white-space: nowrap;
     overflow: hidden;
     border-right: 0.1em solid var(--color-primary);
-    width: 20ch;
+    width: 21.4ch;
     line-height: 80px;
     animation: typing 2s steps(24), blink-caret 0.75s step-end infinite;
 }
@@ -190,7 +190,7 @@ footer {
         width: 0;
     }
     to {
-        width: 20ch;
+        width: 21.4ch;
     }
 }
 @keyframes blink-caret {
