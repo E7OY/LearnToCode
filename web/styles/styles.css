@@ -171,38 +171,6 @@ footer {
 }
 
 
-.typing-container {
-    font-size: 3rem;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 0.1em solid var(--color-primary);
-    width: 21.4ch;
-    line-height: 80px;
-    animation: typing 2s steps(24), blink-caret 0.75s step-end infinite;
-}
-
-.cursor {
-    display: inline-block;
-    animation: blink-caret 0.75s step-end infinite;
-}
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 21.4ch;
-    }
-}
-@keyframes blink-caret {
-    from,
-    to {
-        border-color: transparent;
-    }
-    50% {
-        border-color: var(--color-primary);
-    }
-}
-
 
 .review:hover {
     box-shadow: 10px 10px 25px #CAE2FA, -10px -10px 25px #FAE4F9;
