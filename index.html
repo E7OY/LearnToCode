@@ -13,24 +13,19 @@
 
 <body>
     <header class="main-header sticky-top border border-1 border-bottom">
-        <nav class="navbar navbar-expand-lg py-3">
+        <nav class="navbar navbar-expand-lg py-3" aria-label="Navegación principal">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
                     <img src="./web/img/LEARNTOCODE-2.webp" alt="Learn to Code Logo" width="150" class="logo">
                 </a>
-                <button class="navbar-toggler" 
-                        type="button" 
-                        data-bs-toggle="collapse" 
-                        data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" 
-                        aria-expanded="false" 
-                        aria-label="Menú de navegación">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Menú de navegación">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-between " id="navbarNav">
                     <ul class="navbar-nav mx-auto  py-3">
                         <li class="nav-item">
-                            <a class="nav-link active fw-light" href="#">HOME</a>
+                            <a class="nav-link active fw-light" href="#" aria-current="page">HOME</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link fw-light" href="./web/html/course_list.html">CURSOS</a>
@@ -41,7 +36,7 @@
                     </ul>
                     <button class="btn-primary fw-light text-white">
                         <a href="./web/html/login.html" class="text-white text-decoration-none">Iniciar Sesión</a>
-                        </button>
+                    </button>
                 </div>
             </div>
         </nav>
@@ -54,14 +49,16 @@
                 <h1 class="fw-bold display-4 m-0 p-0 text-center text-lg-start">
                     Aprende a programar hoy
                 </h1>
-                <p class="fw-light mb-4 text-center text-lg-start">Aprende a programar hoy. Más de 100 cursos con certificación
+                <p class="fw-light mb-4 text-center text-lg-start">Aprende a programar hoy. Más de 100 cursos con
+                    certificación
                     oficial
                     y acceso de por vida a la plataforma de aprendizaje. ¡Únete a nuestra comunidad de programadores
                     hoy mismo!
                 </p>
                 <div class="hero-buttons d-flex justify-content-center justify-content-lg-start gap-3">
                     <div class="col-auto">
-                        <a href="./web/html/login.html" class="text-decoration-none btn-primary fw-light">Únete ahora</a>
+                        <a href="./web/html/login.html" class="text-decoration-none btn-primary fw-light">Únete
+                            ahora</a>
                     </div>
                     <div class="col-auto">
                         <a href="#courses" class="text-decoration-none btn-secondary fw-light">Aprender ya</a>
@@ -69,38 +66,39 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6 w-auto">
-                <img src="./web/img/imagen_hero.webp" alt="imagen hero aprende a programar hoy" width="500" class="img-fluid">
+                <img src="./web/img/imagen_hero.webp" alt="imagen hero aprende a programar hoy" width="500"
+                    class="img-fluid">
             </div>
         </section>
 
- <section class="categories  bg-light">
+        <section class="categories  bg-light" aria-labelledby="categories-heading">
             <div class="container">
-                <h2 class="py-5 fw-medium">Categorías</h2>
+                <h2 class="py-5 fw-medium" id="categories-heading">Categorías</h2>
                 <div class="categories-grid row g-4">
                     <div class="category-card col-md-3 text-center">
-                        <div class="category-icon bg-primary-subtle rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
-                            style="width: 90px; height: 90px;">
+                        <div class="category-icon bg-primary-subtle rounded-circle d-flex align-items-center
+                            justify-content-center mx-auto mb-3" style="width: 90px; height: 90px;">
                             <img src="./web/img/diseño.webp" width="30" alt="Diseño Web">
                         </div>
                         <h3 class="fw-light">Diseño Web</h3>
                     </div>
                     <div class="category-card col-md-3 text-center">
-                        <div class="category-icon bg-primary-subtle rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
-                            style="width: 90px; height: 90px;">
+                        <div class="category-icon bg-primary-subtle rounded-circle d-flex align-items-center
+                            justify-content-center mx-auto mb-3" style="width: 90px; height: 90px;">
                             <img src="./web/img/desarrollo.webp" width="30" alt="Desarrollo Web">
                         </div>
                         <h3 class="fw-light">Desarrollo Web</h3>
                     </div>
                     <div class="category-card col-md-3 text-center">
-                        <div class="category-icon bg-primary-subtle rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
-                            style="width: 90px; height: 90px;">
+                        <div class="category-icon bg-primary-subtle rounded-circle d-flex align-items-center
+                            justify-content-center mx-auto mb-3" style="width: 90px; height: 90px;">
                             <img src="./web/img/ia.webp" width="30" alt="Inteligencia Artificial">
                         </div>
                         <h3 class="fw-light">IA</h3>
                     </div>
                     <div class="category-card col-md-3 text-center">
-                        <div class="category-icon bg-primary-subtle rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"
-                            style="width: 90px; height: 90px;">
+                        <div class="category-icon bg-primary-subtle rounded-circle d-flex align-items-center
+                            justify-content-center mx-auto mb-3" style="width: 90px; height: 90px;">
                             <img src="./web/img/seguridad.webp" width="30" alt="Ciber seguridad">
                         </div>
                         <h3 class="fw-light">Ciber-seguridad</h3>
@@ -109,16 +107,17 @@
             </div>
         </section>
 
-        <section class="courses py-5" id="courses">
+        <section class="courses py-5" id="courses" aria-labelledby="courses-heading">
             <div class="container d-flex flex-column gap-3">
-                <h2 class="py-5 fw-medium text-center">Cursos populares</h2>
+                <h2 class="py-5 fw-medium text-center" id="courses-heading">Cursos populares</h2>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                         <article class="d-flex flex-column align-items-stretch gap-4">
                             <div class="review border border-1 border-black-50 bg-white rounded-5 p-4">
                                 <div class="d-flex flex-row justify-content-between">
                                     <h3 class="fw-medium h4">
-                                        <a href="./web/html/course.html" class="text-decoration-none text-black">DISEÑO WEB CON
+                                        <a href="./web/html/course.html" class="text-decoration-none text-black">DISEÑO WEB
+                                            CON
                                             FIGMA</a>
                                     </h3>
                                     <img src="./web/img/meta.webp" style="filter: invert(0.75);" width="30" height="20"
@@ -132,11 +131,14 @@
                                         </p>
                                         <div class="d-flex justify-content-start gap-2 my-2">
                                             <span
-                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4 bg-opacity-100 text-black">DISEÑO</span>
+                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4
+                                                bg-opacity-100 text-black">DISEÑO</span>
                                             <span
-                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4 bg-opacity-100 text-black">FIGMA</span>
+                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4
+                                                bg-opacity-100 text-black">FIGMA</span>
                                             <span
-                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4 bg-opacity-100 text-black">BÁSICO</span>
+                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4
+                                                bg-opacity-100 text-black">BÁSICO</span>
                                         </div>
                                     </div>
                                 </div>
@@ -150,8 +152,8 @@
                                     <h3 class="fw-medium h4">
                                         <a href="#" class="text-decoration-none text-black">INTELIGENIA ARTIFICIAL</a>
                                     </h3>
-                                    <img src="./web/img/deepseek.webp" style="filter: invert(0.75);" width="30" height="30"
-                                        alt="">
+                                    <img src="./web/img/deepseek.webp" style="filter: invert(0.75);" width="30"
+                                        height="30" alt="">
                                 </div>
                                 <hr>
                                 <div class="d-flex flex-row justify-content-between">
@@ -159,15 +161,18 @@
                                         <p>CURSO DE IA GENERATIVA DE DEEPSEEK
                                             APRENDE A CREAR MODELOS DE IA GENERATIVA CON DEEPSEEK
                                             Y CREA OBRAS DE ARTE DIGITAL DE FORMA AUTOMÁTICA Y CREATIVA
-        
+
                                         </p>
                                         <div class="d-flex justify-content-start gap-2 my-2">
                                             <span
-                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4 bg-opacity-100 text-black">IA</span>
+                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4
+                                                bg-opacity-100 text-black">IA</span>
                                             <span
-                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4 bg-opacity-100 text-black">DEEPSEEK</span>
+                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4
+                                                bg-opacity-100 text-black">DEEPSEEK</span>
                                             <span
-                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4 bg-opacity-100 text-black">MEDIO</span>
+                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4
+                                                bg-opacity-100 text-black">MEDIO</span>
                                         </div>
                                     </div>
                                 </div>
@@ -192,11 +197,14 @@
                                         </p>
                                         <div class="d-flex justify-content-start gap-2 my-2">
                                             <span
-                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4 bg-opacity-100 text-black">HTML</span>
+                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4
+                                                bg-opacity-100 text-black">HTML</span>
                                             <span
-                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4 bg-opacity-100 text-black">CSS</span>
+                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4
+                                                bg-opacity-100 text-black">CSS</span>
                                             <span
-                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4 bg-opacity-100 text-black">BÁSICO</span>
+                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4
+                                                bg-opacity-100 text-black">BÁSICO</span>
                                         </div>
                                     </div>
                                 </div>
@@ -210,8 +218,8 @@
                                     <h3 class="fw-medium h4">
                                         <a href="#" class="text-decoration-none text-black">CURSO AVANZADO DE REACT</a>
                                     </h3>
-                                    <img src="./web/img/google.webp" style="filter: invert(0.75);" width="30" height="30"
-                                        alt="">
+                                    <img src="./web/img/google.webp" style="filter: invert(0.75);" width="30"
+                                        height="30" alt="">
                                 </div>
                                 <hr>
                                 <div class="d-flex flex-row justify-content-between">
@@ -223,11 +231,14 @@
                                         </p>
                                         <div class="d-flex justify-content-start gap-2 my-2">
                                             <span
-                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4 bg-opacity-100 text-black">REACT</span>
+                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4
+                                                bg-opacity-100 text-black">REACT</span>
                                             <span
-                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4 bg-opacity-100 text-black">JS</span>
+                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4
+                                                bg-opacity-100 text-black">JS</span>
                                             <span
-                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4 bg-opacity-100 text-black">AVANZADO</span>
+                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4
+                                                bg-opacity-100 text-black">AVANZADO</span>
                                         </div>
                                     </div>
                                 </div>
@@ -252,11 +263,14 @@
                                         </p>
                                         <div class="d-flex justify-content-start gap-2 my-2">
                                             <span
-                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4 bg-opacity-100 text-black">PHP</span>
+                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4
+                                                bg-opacity-100 text-black">PHP</span>
                                             <span
-                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4 bg-opacity-100 text-black">MYSQL</span>
+                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4
+                                                bg-opacity-100 text-black">MYSQL</span>
                                             <span
-                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4 bg-opacity-100 text-black">AVANZADO</span>
+                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4
+                                                bg-opacity-100 text-black">AVANZADO</span>
                                         </div>
                                     </div>
                                 </div>
@@ -270,8 +284,8 @@
                                     <h3 class="fw-medium h4">
                                         <a href="#" class="text-decoration-none text-black">CURSO BACKEND AVANZADO</a>
                                     </h3>
-                                    <img src="./web/img/deepseek.webp" style="filter: invert(0.75);" width="30" height="30"
-                                        alt="">
+                                    <img src="./web/img/deepseek.webp" style="filter: invert(0.75);" width="30"
+                                        height="30" alt="">
                                 </div>
                                 <hr>
                                 <div class="d-flex flex-row justify-content-between">
@@ -283,11 +297,14 @@
                                         </p>
                                         <div class="d-flex justify-content-start gap-2 my-2">
                                             <span
-                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4 bg-opacity-100 text-black">API</span>
+                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4
+                                                bg-opacity-100 text-black">API</span>
                                             <span
-                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4 bg-opacity-100 text-black">JWT</span>
+                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4
+                                                bg-opacity-100 text-black">JWT</span>
                                             <span
-                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4 bg-opacity-100 text-black">AVANZADO</span>
+                                                class="fw-lighter px-2 py-1 border border-1 border-black-50 rounded-4
+                                                bg-opacity-100 text-black">AVANZADO</span>
                                         </div>
                                     </div>
                                 </div>
@@ -298,13 +315,13 @@
             </div>
         </section>
 
-        <section class="reviews w-100 py-5">
+        <section class="reviews w-100 py-5" aria-labelledby="opinions-title">
             <div class="container">
-                <h2 class="py-5 fw-medium">Opiniones</h2>
+                <h2 class="py-5 fw-medium" id="opinions-title">Opiniones</h2>
 
                 <div class="row d-flex justify-content-center h-auto mb-5">
 
-                    <div class="col-md-4 fw-light d-flex flex-column align-items-end gap-4 mt-5" style="margin-top: -20px;">
+                    <div class="col-md-4 fw-light d-flex flex-column align-items-stretch gap-4">
                         <div class="review border border-1 border-black-50 bg-white rounded-5 p-4">
                             <p>Los mejores cursos de programación que he encontrado en la web, me han ayudado a mejorar
                                 mis habilidades.</p>
@@ -314,11 +331,12 @@
                                     <h3 class="h6 mb-0">Juan Pérez</h3>
                                     <span class="text-black">Desarrollador Web</span>
                                 </div>
-                                <img src="./web/img/usuario.webp" alt="icono usuario" width="40" height="40" style="opacity: 0.1;">
+                                <img src="./web/img/usuario.webp" alt="icono usuario" width="40" height="40"
+                                    style="opacity: 0.1;">
                             </div>
                         </div>
 
-                        <div class="review border border-1 border-black-50 bg-white rounded-5 p-4" style="margin-right: -20p;">
+                        <div class="review border border-1 border-black-50 bg-white rounded-5 p-4">
                             <p>Los mejores cursos de programación que he encontrado en la web, me han ayudado a mejorar
                                 mis habilidades.</p>
                             <hr>
@@ -327,13 +345,14 @@
                                     <h3 class="h6 mb-0">Juan Pérez</h3>
                                     <span class="text-black">Desarrollador Web</span>
                                 </div>
-                                <img src="./web/img/usuario.webp" alt="icono usuario" width="40" height="40" style="opacity: 0.1;">
+                                <img src="./web/img/usuario.webp" alt="icono usuario" width="40" height="40"
+                                    style="opacity: 0.1;">
                             </div>
                         </div>
-                        
+
                     </div>
 
-                    <div class="col-md-4 fw-light d-flex flex-column align-items-end gap-4" style="margin-top: 20px;">
+                    <div class="col-md-4 fw-light d-flex flex-column align-items-stretch gap-4">
                         <div class="review border border-1 border-black-50 bg-white rounded-5 p-4">
                             <p>Los mejores cursos de programación que he encontrado en la web, me han ayudado a mejorar
                                 mis habilidades.</p>
@@ -343,7 +362,8 @@
                                     <h3 class="h6 mb-0">Juan Pérez</h3>
                                     <span class="text-black">Desarrollador Web</span>
                                 </div>
-                                <img src="./web/img/usuario.webp" alt="icono usuario" width="40" height="40" style="opacity: 0.1;">
+                                <img src="./web/img/usuario.webp" alt="icono usuario" width="40" height="40"
+                                    style="opacity: 0.1;">
                             </div>
                         </div>
 
@@ -356,13 +376,14 @@
                                     <h3 class="h6 mb-0">Juan Pérez</h3>
                                     <span class="text-black">Desarrollador Web</span>
                                 </div>
-                                <img src="./web/img/usuario.webp" alt="icono usuario" width="40" height="40" style="opacity: 0.1;">
+                                <img src="./web/img/usuario.webp" alt="icono usuario" width="40" height="40"
+                                    style="opacity: 0.1;">
                             </div>
                         </div>
-                        
+
                     </div>
 
-                    <div class="col-md-4 fw-light d-flex flex-column align-items-end gap-4" style="margin-top: 30px;">
+                    <div class="col-md-4 fw-light d-flex flex-column align-items-stretch gap-4">
                         <div class="review border border-1 border-black-50 bg-white rounded-5 p-4">
                             <p>Los mejores cursos de programación que he encontrado en la web, me han ayudado a mejorar
                                 mis habilidades.</p>
@@ -372,7 +393,8 @@
                                     <h3 class="h6 mb-0">Juan Pérez</h3>
                                     <span class="text-black">Desarrollador Web</span>
                                 </div>
-                                <img src="./web/img/usuario.webp" alt="icono usuario" width="40" height="40" style="opacity: 0.1;">
+                                <img src="./web/img/usuario.webp" alt="icono usuario" width="40" height="40"
+                                    style="opacity: 0.1;">
                             </div>
                         </div>
 
@@ -385,7 +407,8 @@
                                     <h3 class="h6 mb-0">Juan Pérez</h3>
                                     <span class="text-black">Desarrollador Web</span>
                                 </div>
-                                <img src="./web/img/usuario.webp" alt="icono usuario" width="40" height="40" style="opacity: 0.1;">
+                                <img src="./web/img/usuario.webp" alt="icono usuario" width="40" height="40"
+                                    style="opacity: 0.1;">
                             </div>
                         </div>
                     </div>
@@ -414,9 +437,9 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script src="./web/scripts/app.js"></script>
 </body>
 </body>
