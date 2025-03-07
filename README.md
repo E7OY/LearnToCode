@@ -1,6 +1,6 @@
-# PracticaAccesibilidad
+# Learn to Code
 
-Este repositorio contiene el código fuente para la práctica de accesibilidad de la asignatura DIW (Desarrollo de Interfaces Web).
+Learn to Code es una plataforma en línea dedicada a la venta de cursos de programación. Nuestra misión es ofrecer recursos educativos accesibles y de calidad para ayudar a personas de todos los niveles a mejorar sus habilidades en desarrollo de software. Desde principiantes hasta expertos, Learn to Code proporciona una amplia variedad de cursos en diferentes lenguajes y tecnologías.
 
 ## Descripción
 
